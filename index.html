@@ -34,11 +34,14 @@
 <html>
 <script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
 <script src="https://raw.githack.com/jeromeetienne/AR.js/2.0.5/aframe/build/aframe-ar.js"></script>
+
 <body style='margin : 0px; overflow: scroll;'>
-  <a-scene embedded arjs>
-    <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
-    <a-marker type="pattern" url="path/path/to/pattern-marker.patt"></a-marker>
-    <a-marker-camera preset='hiro'></a-marker-camera>
-  </a-scene>
+    <a-scene embedded arjs>
+        <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+        <a-animation attribute="rotation" dur="3000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>
+        <a-marker type="pattern" url="path/path/to/pattern-marker.patt"></a-marker>
+        <a-marker-camera preset='hiro'></a-marker-camera>
+    </a-scene>
 </body>
+
 </html>
