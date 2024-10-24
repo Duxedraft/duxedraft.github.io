@@ -37,15 +37,12 @@
 
 <body style='margin : 0px; overflow: scroll;'>
     <a-scene embedded arjs="debugUIEnabled: false;">
-        <a-marker preset=’hiro’’>
-
-            <a-box position=’0 1 0′ material=’opacity: 0.5; color: #F70087;’></a-box>
-            
-            </a-marker>
-            
-            <a-entity camera></a-entity>
-            
-            </a-scene>
+       
+        <a-marker preset='custom' type='pattern' url='/githubTest/pattern-Duncan Marker.patt'>
+            <a-box position='0 1 0' material='opacity: 0.5; color: #F70087;'></a-box>
+        </a-marker>
+        <a-entity camera></a-entity>
+    </a-scene>
 
 </body>
 
