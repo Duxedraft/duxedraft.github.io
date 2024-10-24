@@ -37,19 +37,15 @@
 
 <body style='margin : 0px; overflow: scroll;'>
     <a-scene embedded arjs="debugUIEnabled: false;">
-       
-        <a-marker preset="custom" type="pattern" url="/githubTest/pattern-Duncan Marker.patt">
-            <a-box position=’0 1 0′ material=’opacity: 0.5; color: #F70087;’></a-box>
-        <!--<a-animation attribute="rotation" dur="3000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>-->
-        </a-marker>
-        <a-entity camera></a-entity>
+        <a-marker preset=’hiro’’>
 
-        <!--<a-marker-camera preset='hiro'>
-             <a-entity obj-model=”obj: url(/githubTest/Spaceship/Spaceship.obj); mtl:
-                url(/githubTest/Spaceship/Spaceship.mtl)”>
-            </a-entity>
-        </a-marker-camera>-->
-    </a-scene>
+            <a-box position=’0 1 0′ material=’opacity: 0.5; color: #F70087;’></a-box>
+            
+            </a-marker>
+            
+            <a-entity camera></a-entity>
+            
+            </a-scene>
 
 </body>
 
