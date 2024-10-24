@@ -38,11 +38,11 @@
 <body style='margin : 0px; overflow: scroll;'>
     <a-scene embedded arjs="debugUIEnabled: false;">
        
-        <a-marker-camera type="pattern" url="/githubTest/pattern-Duncan QR Code.patt">
+        <a-marker type="pattern" url="/githubTest/pattern-Duncan QR Code.patt">
             <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
         <!--<a-animation attribute="rotation" dur="3000" to="0 360 0" repeat="indefinite" easing="linear"></a-animation>-->
-        </a-marker-camera>
-        
+        </a-marker>
+        <a-entity camera></a-entity>
 
         <!--<a-marker-camera preset='hiro'>
              <a-entity obj-model=”obj: url(/githubTest/Spaceship/Spaceship.obj); mtl:
